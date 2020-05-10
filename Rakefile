@@ -6,6 +6,7 @@ require 'rubocop/rake_task'
 require 'rspec/core/rake_task'
 
 Dotenv.load
+ENV['LD_LIBRARY_PATH'] = 'ext'
 
 RSpec::Core::RakeTask.new(:spec)
 
